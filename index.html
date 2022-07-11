@@ -1,0 +1,20 @@
+<html>
+<body  onload="setcookie()">
+
+<form action="welcome.php" method="post">
+Name: <input type="text" name="name"><br>
+E-mail: <input type="text" name="email"><br>
+<input type="submit" onclick="getcookie()">
+</form>
+
+</body>
+<script>
+    function getcookie(){
+        let x = document.cookie;
+        alert(x);
+    }
+    function setcookie(){
+        document.cookie ="username=asvika;expires=Thu, 14 July 2022 12:00:00 UTC; path=/"
+    }
+</script>
+</html> 
